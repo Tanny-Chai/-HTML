@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 
+            auto auto auto auto auto auto
+            auto auto auto auto auto auto;
+            background-color: #8E44AD;
+            border: 1px solid #D2B4DE;
+        }
+        .grid-container > div {
+            background-color: #8E44AD;
+            border: 1px solid #D2B4DE;
+            text-align: center;
+            padding: 20px 20px;
+        }
+        .item1 {
+            grid-column: 1 / 13;
+        }
+        .grid-container a {
+            text-decoration: none;
+            color: #D2B4DE;
+        }
+        .grid-container a:hover {
+            background-color: #A569BD;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        เว็บไซต์ตัวอย่าง</h1>
+    <p style="font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://pantip.com/" target="_blank">pantip.com</a>
+    </p>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        วิเคราะห์ Element บนหน้าเว็บ</h1>
+    <p style="font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ส่วนแรก  Navigation Bar ด้านซ้าย <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./img/Navigation.JPG" alt="Navigation">
+    </p> <br>
+    <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    แถบ Navigation Bar ของเว็บพันทิป ที่มาแสดงตัวอย่างนี้ เรียกว่า Vertical Navbar ใช้หลักการในการสร้างหลักๆ
+    คือ <br> ใช้ element &ltul&gt และปรับ style background-color witdh height และ positon = fixed <br>
+    ตามกรอบ iframe ด้านล่าง คือการตรึงแนวเวลา scroll เมาส์ขึ้นลง จะเลื่อนแต่ส่วนเนื้อหาของเว็บเท่านั้น <br>
+    ส่วนลิงค์ภายใน Vertical Navbar ใช้ element &ltli&gt และ &lta&gt อย่ภายในอีกทีนั่นเอง และปรับ <br>
+    style ของ &lta&gt ด้วย :hover ใช้เวลานำเมาส์ไปวางที่ลิงค์นั้น และ style สำหรับไฮไลต์ลิงค์ที่กำลัง<br>
+    เปิดอยู่ในหน้าปัจจุบัน ดังนี้
+    </p> <br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <iframe src="navigation.html" height="300px" width="500px"></iframe>
+    <br><br>
+
+    <p style="font-size: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ส่วนที่สอง  แถบลิงค์สำหรับเลือกห้อง <br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./img/room.JPG" alt="Navigation">
+    </p> <br>
+
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ส่วนนี้ใช้ grid-container โดยใช้ element &ltdiv&gt เป็นหลัก ปรับ style display=flex <br>
+        ปรับ grid-templet column เป็น 12 column และใส่ &ltdiv&gt ซ้อน &ltdiv&gt อีกที เพื่อใช้เป็นกรอบด้านใน <br>
+        ปรับ style 
+        border text-align background-color font-size 
+        </p> <br><br>
+
+        <div class="grid-container">
+            <div style="background-color:#5B2C6F; color: #D4AC0D;font-size: 30px;
+            text-align: left;" 
+            class="item1">
+        เลือกห้อง
+        </div>
+            <div><a href="#">สินธร</a></div>
+            <div><a href="#">บางขุนพรม</a></div>
+            <div><a href="#">กรุงโซล</a></div>
+            <div><a href="#">ก้นครัว</a></div>
+            <div><a href="#">หว้ากอ</a></div>
+            <div><a href="#">บลูแพลนเน็ต</a></div>
+            <div><a href="#">มาบุญครอง</a></div>
+            <div><a href="#">สีลม</a></div>
+            <div><a href="#">สวนลุมพินี</a></div>
+            <div><a href="#">ซิลิคอนวัลเลย์</a></div>
+            <div><a href="#">พรหมชาติ</a></div>
+            <div><a href="#">ไกลบ้าน</a></div>
+            <div><a href="#">ศุภพัชลาศัย</a></div>
+            <div><a href="#">ราชดำเนิน</a></div>
+            <div><a href="#">การ์ตูน</a></div>
+            <div><a href="#">รัชดา</a></div>
+            <div><a href="#">ชายคา</a></div>
+            <div><a href="#">บางรัก</a></div>
+            <div><a href="#">ศาลาประชาคม</a></div>
+            <div><a href="#">รวมมิตร</a></div>
+            <div><a href="#">เฉลิมไทย</a></div>
+            <div><a href="#">ชานเรือน</a></div>
+            <div><a href="#">โต๊ะเครื่องแป้ง</a></div>
+            <div><a href="#">สยามแควร์</a></div>
+        </div>
+
+</body>
+</html>

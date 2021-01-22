@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            background-color: #8E44AD ;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        li a {
+            display: block;
+            color: #D2B4DE;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active {
+            background-color: #5B2C6F;
+            color: white;
+        }
+        li a:hover:not(.active) {
+            background-color: #5B2C6F;
+            color: white;           
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#">หน้าแรก</a></li>
+        <li><a href="#">My Feed</a></li>
+        <li><a href="#">Pantip Pick</a></li>
+        <li><a href="#">Pantip Hitz</a></li>
+        <li style="border-bottom: 1px solid #D2B4DE;"><a href="#">คอมมููนิตี้แนะนำ</a></li>
+        <li><a href="#">Pantip Point</a></li>
+        <li style="border-bottom: 1px solid #D2B4DE;"><a href="#">กิจกรรมพันทิป</a></li>
+    </ul>
+    <div style="margin-left:20%;padding:1px 16px;height:1000px;">
+        <h1>เนื้อหาเว็บ</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Magnam tempora consequuntur natus explicabo, 
+            voluptate excepturi consequatur mollitia nemo, 
+            repellat architecto placeat laboriosam dolores. 
+            Recusandae repellendus ad quibusdam accusamus quod cupiditate!
+        </p>
+    </div>
+</body>
+</html>
